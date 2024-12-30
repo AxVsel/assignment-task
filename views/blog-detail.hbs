@@ -1,0 +1,13 @@
+{{#> layout title="blog detail"}}
+
+<section class="blog-container">
+  <div class="blog-detail-container">
+    <h1 class="h1">{{data.title}}</h1>
+    <p>{{formatDateToWIB data.createdAt}} | Yaumil Aksah</p>
+    <div class="blog-detail-content">
+      <img src="{{data.image}}" class="blog-detail-image" alt="">
+      <p>{{data.content}}</p>
+    </div>
+  </div>
+</section>
+{{/layout}}

@@ -1,0 +1,97 @@
+{{#> layout title="My Project"}}
+
+<main class="main_Myproject">
+  <form id="contactForm" class="contact-form">
+    <h1>ADD MY PROJECT</h1>
+    <div class="form-field">
+      <label for="projectname">Project Name</label>
+      <input id="projectname" name="projectname" class="form-input" type="text" placeholder="Project Name" required />
+    </div>
+
+    <div class="date-column">
+      <div class="form-field-date1">
+        <label for="startdate">Start Date</label>
+        <input id="startdate" name="startdate" class="form-input-date" type="date" placeholder="email" required />
+      </div>
+
+      <div class="form-field-date2">
+        <label for="enddate">End Date</label>
+        <input id="enddate" name="enddate" class="form-input-date" type="date" placeholder="email" required />
+      </div>
+    </div>
+
+    <div class="form-field">
+      <label class="message-contact" for="description">Description</label>
+      <textarea id="description" name="description" class="form-input" rows="6" required></textarea>
+    </div>
+
+    <div class="form-checkbox">
+      <label for="technologies">Tecnologies</label>
+
+      <div class="form-field-checkbox1">
+        <input type="checkbox" id="nodejs" name="nodejs" value="nodejs" class="form-input-checkbox" />
+        <span class="checkboxlabel" for="nodejs">Node JS</span>
+        <input type="checkbox" id="reactjs" name="reactjs" value="reactjs" class="form-input-checkbox" />
+        <span class="checkboxlabel" for="reactjs">React JS</span>
+      </div>
+
+      <div class="form-field-checkbox2">
+        <input type="checkbox" id="nextjs" name="nextjs" value="nextjs" class="form-input-checkbox" />
+        <span class="checkboxlabel" for="nextjs">Next JS</span>
+        <input type="checkbox" id="typescript" name="node" value="typescript" class="form-input-checkbox" />
+        <span class="checkboxlabel" for="typescript">Typescript</span>
+      </div>
+    </div>
+
+    <div class="form-field">
+      <label for="input-blog-image" class="form-label">Upload Image</label>
+      <div class="input-blog-image-group">
+        <label for="input-blog-image">
+          <p>Attach File</p>
+          <img src="assets/file.png" />
+        </label>
+        <input id="input-blog-image" name="input-blog-image" class="form-input" type="file" placeholder="title"
+          hidden />
+      </div>
+    </div>
+    <div class="btn-right">
+      <button type="submit" class="form-submit-button">Submit</button>
+    </div>
+  </form>
+</main>
+<hr />
+
+<article>
+  <h1>MY PROJECT</h1>
+  <div class="card-container">
+    <div class="card">
+      <div class="card-image">
+        <img src="./assets/wp13733667-obito-face-wallpapers.png" alt="content-image" />
+      </div>
+      <div class="card-info">
+        <h2>Dumbways Test</h2>
+        <p class="duration">durasi : 3 bulan</p>
+        <p class="info">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+          error illo, molestiae facere vel minus provident iusto excepturi
+          corrupti tempora.
+        </p>
+      </div>
+      <div class="card-tech">
+        <img src="./assets/linkedin-brands-solid (1).svg" alt="" />
+        <img src="./assets/discord-brands-solid.svg" alt="" />
+        <img src="./assets/facebook-brands-solid.svg" alt="" />
+      </div>
+
+      <div class="card-button">
+        <div class="card-button-cover1">
+          <button type="" class="card-button-submit">Edit</button>
+        </div>
+        <div class="card-button-cover2">
+          <button type="" class="card-button-submit">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+{{/layout}}

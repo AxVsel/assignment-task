@@ -1,0 +1,12 @@
+/* testimonial page */
+
+.btn-orange {
+  color: white;
+  background-color: orangered;
+}
+
+.btn-orange:hover {
+  color: orangered;
+  background-color: white;
+  border: 1px solid orangered;
+}
